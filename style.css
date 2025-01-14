@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    height: 100vh;
+    background-image: url(assets/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent dark overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.game-container{
+    width: 40rem;
+    height: 30rem;
+    border-radius: 15px;
+    background: #ffffff;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2), -6px -6px 15px rgba(255, 255, 255, 0.2)
+}
+
+.game-container h1{
+    font-size: 3rem;
+    font-weight: 600;
+    color: #222;
+    text-transform: capitalize;
+}
+
+.game-container p{
+    font-size: 1.5rem;
+    color: #555;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+.game-container .input-group{ 
+    margin: 2rem 0;
+    width: 100%
+}
+
+.game-container .input-group input{
+    width: 100%;
+    padding: 1rem 2rem;
+    border: 1.5px solid #ccc;
+    font-size: 1.4rem;
+    color: gray;
+}
+
+.game-container .btn{
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    background-color: rgb(53, 208, 156);
+    color: #ffffff;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.game-container .btn:hover{
+    background: #218838;
+}
+
+.game-container {
+    animation: fadeIn 1.5s ease-out, slideIn 2s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
