@@ -26,7 +26,7 @@ The goal of the game is to guess the correct number in the least number of attem
 ## How to View the Game
 
 You can view the live version of the game by visiting the following URL:  
-[https://github.com/MaharjanRijan/guessTheNumber](https://github.com/MaharjanRijan/guessTheNumber)
+[https://github.com/MaharjanRijan/guessTheNumber](https://maharjanrijan.github.io/guessTheNumber/)
 
 ## Technologies Used
 
